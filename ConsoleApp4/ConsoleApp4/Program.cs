@@ -11,38 +11,49 @@ Retangulo retan3 = new Retangulo(70, 62);
 Funcionario func1 = new Funcionario("Murilo", "123.456.789-10", 1500, 50);
 Funcionario func2 = new Funcionario("Fulano", "109.876.543-21", 2000, 40);
 
-Console.WriteLine($"\n" +
-    $"Nº da conta = {conta1.NúmeroConta}\n" +
-    $"Nome: {conta1.Nome}\n" +
-    $"Saldo: {conta1.Saldo}");
+Alunos aluno1 = new Alunos("Murilo", "123.456.789-12", "25-08-2004", 50, 60, 80);
+Console.WriteLine($"Nome: {aluno1.Nome}" +
+    $"CPF: {aluno1.CPF}" +
+    $"DataNascimento: {aluno1.DataNascimento}" +
+    $"Faltas: {aluno1.GetFaltas()}" +
+    $"Nota1: {aluno1.Nota1}" +
+    $"Nota2: {aluno1.Nota2}" +
+    $"Media: {aluno1.MediaNotas()}");
 
-conta1.alterarNome("Murillo");
-conta1.deposito(300);
-conta1.saque(100);
+//Console.WriteLine($"\n" +
+//    $"Nº da conta = {conta1.NúmeroConta}\n" +
+//    $"Nome: {conta1.Nome}\n" +
+//    $"Saldo: {conta1.Saldo}");
 
-Console.WriteLine($"\n" +
-    $"Nº da conta = {conta1.NúmeroConta}\n" +
-    $"Nome: {conta1.Nome}\n" +
-    $"Saldo: {conta1.Saldo}");
+//conta1.alterarNome("Murillo");
+//conta1.deposito(300);
+//conta1.saque(100);
 
-Console.WriteLine($"\nA: {retan1.A}" +
-    $"\nB: {retan1.B}" +
-    $"\nArea: {retan1.Area()}" +
-    $"\nPerimetro: {retan1.Perimetro()}");
+//Console.WriteLine($"\n" +
+//    $"Nº da conta = {conta1.NúmeroConta}\n" +
+//    $"Nome: {conta1.Nome}\n" +
+//    $"Saldo: {conta1.Saldo}");
 
-func1.GetBonificacao(500);
-func1.AumentarSalario(1000);
-func1.GetFaltas(20);
+//Console.WriteLine($"\nA: {retan1.A}" +
+//    $"\nB: {retan1.B}" +
+//    $"\nArea: {retan1.Area()}" +
+//    $"\nPerimetro: {retan1.Perimetro()}");
 
-Console.WriteLine($"\nNome Funcionario: {func1.Nome}" +
-    $"\nCPF: {func1.CPF}" +
-    $"\nSalario: {func1.Salário}" +
-    $"\nFaltou: {func1.Faltou()}\n\n");
+//func1.GetBonificacao(500);
+//func1.AumentarSalario(1000);
+//func1.GetFaltas(20);
 
-float x = float.Parse(Console.ReadLine());
-float y = float.Parse(Console.ReadLine());
+//Console.WriteLine($"\nNome Funcionario: {func1.Nome}" +
+//    $"\nCPF: {func1.CPF}" +
+//    $"\nSalario: {func1.Salário}" +
+//    $"\nFaltou: {func1.Faltou()}\n\n");
 
-Console.WriteLine($"\nSOMA: {Calculadora.soma(x,y)}" +
-    $"\nSUB: {Calculadora.sub(x,y)}" +
-    $"\nMULT: {Calculadora.mult(x,y)}" +
-    $"\nDIV: {Calculadora.div(x,y)}");
+
+
+//float x = float.Parse(Console.ReadLine());
+//float y = float.Parse(Console.ReadLine());
+
+//Console.WriteLine($"\nSOMA: {Calculadora.soma(x,y)}" +
+//    $"\nSUB: {Calculadora.sub(x,y)}" +
+//    $"\nMULT: {Calculadora.mult(x,y)}" +
+//    $"\nDIV: {Calculadora.div(x,y)}");
